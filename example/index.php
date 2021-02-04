@@ -122,4 +122,8 @@ $app->get('/db', function () {
     return DB::query('SELECT * FROM `user` WHERE gender = ?;', [1]);
 });
 
+$app->get('/db1', function () {
+    return DB::query('SELECT * FROM `book` WHERE id = ?;', [1]);
+});
+
 $app->run();
